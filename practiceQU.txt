@@ -1,3 +1,6 @@
+//these are questions that I may ask during class- the professor asked us to bring questions. The answers I provided to the skide questions are in the other file.
+
+
 1. What is meant by create a view?
 
 2. Unclear what is meant by "Select all the products and the category that the product is in." (esp swhagt meant by select)

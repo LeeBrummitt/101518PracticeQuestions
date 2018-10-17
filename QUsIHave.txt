@@ -1,3 +1,7 @@
+//Answers to the questions in the slides
+
+
+Instrictuons:
 ignore sequel stuff
 
 1.
