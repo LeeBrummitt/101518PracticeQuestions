@@ -1,0 +1,80 @@
+ignore sequel stuff
+
+1.
+db.product.aggregate(
+   [
+     { $project: {name: 1, TotalValue: { $sum:   { $multiply: [ "$price", "$qty" ] }  } }}
+   ]
+);
+
+2.
+db.product.find(
+    {},
+    {_id: 0, category: 1}
+);
+
+// 8
+
+// SQL, told to ignore
+
+// same  categories names are listed multiple times, some empty things listed
+
+3.
+db.product.find(
+    {},
+    {_id: 0, name: 1, category: 1}
+);
+
+4.
+db.product.find(
+    {},
+    {_id: 0, category: 1, company: 1}
+);
+
+// ignore SQL questions
+
+// takes a small amount of time to do the search
+
+5.
+db.product.update(
+    {company: "Stanley"},
+    {$set:{company: "Stanley Black and Decker"}},
+    {multi: true}
+);
+// 2 matched, 2 modified
+
+// ignote SQL questions
+
+6.
+db.product.find(
+    {
+    price : {   
+        $gt: 10
+    },
+    category: {
+        $eq: "Tools"
+    }
+    },
+    {}
+);
+
+// see below
+db.product.find(
+    {
+    price : {   
+        $gt: 10
+    },
+    category: {
+        $eq: "Tools"
+    },
+    company : {   
+        $eq: "Stanley Black and Decker"
+    }
+    },
+    {}
+);
+
+
+7.
+db.product.remove({company: "Crest"});
+// items from Crest no longer show up

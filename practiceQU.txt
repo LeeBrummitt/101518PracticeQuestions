@@ -1,0 +1,27 @@
+1. What is meant by create a view?
+
+2. Unclear what is meant by "Select all the products and the category that the product is in." (esp swhagt meant by select)
+// Unclear what meant by "How many collections needed to be joined to recover the data?" (esp by recover the data)
+// none
+// hard to answer when unclear about previous parts
+
+3. Same as 2 but with name?
+
+4. what do you mean by select?
+
+//ignore
+
+//What is meant by cost?
+
+5.no problems
+
+//how to tell how many documents need to be updated?
+
+//ignore SQL
+
+6.
+
+//You mean only those by Stanley Black and Decker with the requirements above, or without?
+
+7. may have done incorrectly?
+//see above
